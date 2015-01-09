@@ -43,4 +43,12 @@ Sugarlistens repo: https://github.com/rparrapy/sugarlistens
 
 8. Copy the speech folder from the dir sugar/extensions/deviceicon/speech ['sugar' is the clone we did of the speech-recognition branch of https://github.com/rparrapy/sugar repository] and paste it inside sugar-build/build/out/install/share/sugar/extensions/deviceicon/ 
 
-9. Clone the maze activity and run it in a separate terminal
+9. Clone the maze activity 
+  ```
+  cd sugar-build/activities
+  git clone https://github.com/rparrapy/maze
+  ```
+10. Run sugar
+  ```
+  ./osbuild run
+  ```
