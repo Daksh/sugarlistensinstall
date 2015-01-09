@@ -7,15 +7,15 @@ Sugarlistens repo: https://github.com/rparrapy/sugarlistens
 
 1. Follow the steps on http://developer.sugarlabs.org/dev-environment.md.html to have sugar-build up and running
 
-2. Clone https://github.com/rparrapy/sugarlistens and https://github.com/rparrapy/sugar/tree/speech-recognition/extensions/deviceicon/speech
+2. Instal the dependencies with [in sugar's shell]
+  ```
+  sudo yum install pocketsphinx pocketsphinx-libs pocketsphinx-plugin pocketsphinx-devel pocketsphinx-python pocketsphinx-models git python-setuptools python-lockfile
+  ```
+
+3. Clone https://github.com/rparrapy/sugarlistens and https://github.com/rparrapy/sugar/tree/speech-recognition/extensions/deviceicon/speech
   ```
   git clone https://github.com/rparrapy/sugarlistens
   git clone -b speech-recognition https://github.com/rparrapy/sugar
-  ```
-
-3. Instal the dependencies with [in sugar's shell]
-  ```
-  sudo yum install pocketsphinx pocketsphinx-libs pocketsphinx-plugin pocketsphinx-devel pocketsphinx-python pocketsphinx-models git python-setuptools python-lockfile
   ```
 
 4. Generate sugarlistens rpm
