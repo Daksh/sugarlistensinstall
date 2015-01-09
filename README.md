@@ -60,3 +60,11 @@ Sugarlistens repo: https://github.com/rparrapy/sugarlistens
   ```
   ./osbuild run
   ```
+
+
+Note: Where ever it is written that the commands need to be run in sugar's shell, You need to 
+```
+cd sugar-build
+./osbuild shell
+```
+and then run those commands
