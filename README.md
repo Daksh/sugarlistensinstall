@@ -9,11 +9,12 @@ Sugarlistens repo: https://github.com/rparrapy/sugarlistens
 
 2. Clone https://github.com/rparrapy/sugarlistens and https://github.com/rparrapy/sugar/tree/speech-recognition/extensions/deviceicon/speech
 
-3. Instal the dependencies with 
+3. Instal the dependencies with [in sugar's shell]
   ```sudo yum install pocketsphinx pocketsphinx-libs pocketsphinx-plugin pocketsphinx-devel pocketsphinx-python pocketsphinx-models git python-setuptools python-lockfile```
 
 4. Generate sugarlistens rpm
   ```
+    cd sugarlistens
     sudo yum install rpmdevtools rpmlint
     ./genrpm.sh 0.0.1
   ```
