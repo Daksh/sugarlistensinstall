@@ -8,6 +8,8 @@ Sugar Listens is a GSoC 2014 project that seeks to provide speech recognition ca
 
 This guide has been made for a Fedora 20 machine running sugar environment, similar steps can be followed to install it on other Operating Systems, with minor changes. 
 
+If you are successfully able to follow all the given steps, you will have a Maze activity controllable by Speech. And you can further use the installed sugar listens to use it with other activites! 
+
 ##Setup and Run
 
 1. Follow the steps on http://developer.sugarlabs.org/dev-environment.md.html to have sugar-build up and running
@@ -68,15 +70,18 @@ This guide has been made for a Fedora 20 machine running sugar environment, simi
   ```
 
 
-Note: Where ever it is written that the commands need to be run in sugar's shell, You need to 
-```
-cd sugar-build
-./osbuild shell
-```
-and then run those commands
+##Note 
+* We are generating a RPM, so that it can be installed as a systemd service. Which would then, enable us to run the service parallel to running the sugar environment, and also to integrate the two, we need to install it under sugar, by using the python install command.
+* Where ever it is written that the commands need to be run in sugar's shell, First you would need to run the following commands:
 
-Still need help?
+  ```
+  cd sugar-build
+  ./osbuild shell
+  ```
+
+##Still need help?
 You can find a video guide of the above steps at http://youtu.be/kbs8Iw2oVuI
+You can feel free to contact me, at dakshshah@live.com or the [developer of the activity](https://github.com/rparrapy)
 
 ##Source
 Sugarlistens repository: https://github.com/rparrapy/sugarlistens
